@@ -24,7 +24,14 @@ app.get('/powerdynamics', (req, res) => {
   res.sendFile(path.join(__dirname, 'Power Dynamics.html'));
 });
 
+app.get('/shivernet', (req, res) => {
+	res.sendFile(path.join(__direname, 'shivernet.social.html'));
+});
+app.get('/harbor', (req, res) => {
+	res.sendFile(path.join(__direname, 'harbor.shivernet.social.html'));
+});
+
 // end of pages
 
-app.listen(9000, "169.197.80.55");
-console.log('Server is listening on 169.197.80.55:9000');
+app.listen(9000);
+console.log('Server is listening on localhost:9000');
