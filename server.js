@@ -20,16 +20,8 @@ app.get('/faq', (req, res) => {
   res.sendFile(path.join(__dirname, 'Frequently Asked Questions.html'));
 });
 
-app.get('/powerdynamics', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Power Dynamics.html'));
-});
-
-app.get('/powerdynamics/shiver', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Shiver Dynamics.html'));
-});
-
-app.get('/powerdynamics/writersbloc', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Writers Bloc Dynamics.html'));
+app.get('/piratedynamics', (req, res) => {
+  res.sendFile(path.join(__dirname, 'Pirate Dynamics.html'));
 });
 
 // end of pages
@@ -37,9 +29,9 @@ app.get('/powerdynamics/writersbloc', (req, res) => {
 /*BE SURE TO USE THE CORRECT PORT AND IP BEFORE PUSHING TO PRODUCTION*/
 
 /*DEV*/
-//app.listen(9000);
-//console.log('Server is listening on localhost:9000');
+app.listen(9000);
+console.log('Server is listening on localhost:9000');
 
 /*PROD*/
-app.listen(9000, "169.197.80.55");
-console.log('Server is listening on 169.197.80.55:9000');
+//app.listen(9000, "169.197.80.55");
+//console.log('Server is listening on 169.197.80.55:9000');
