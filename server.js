@@ -20,6 +20,10 @@ app.get('/faq', (req, res) => {
   res.sendFile(path.join(__dirname, 'Frequently Asked Questions.html'));
 });
 
+app.get('/powerdynamics', (req, res) => {
+  res.redirect(301, "/piratedynamics");
+});
+
 app.get('/piratedynamics', (req, res) => {
   res.sendFile(path.join(__dirname, 'Pirate Dynamics.html'));
 });
