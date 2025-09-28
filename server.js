@@ -33,9 +33,9 @@ app.get('/piratedynamics', (req, res) => {
 /*BE SURE TO USE THE CORRECT PORT AND IP BEFORE PUSHING TO PRODUCTION*/
 
 /*DEV*/
-app.listen(9000);
-console.log('Server is listening on localhost:9000');
+// app.listen(9000);
+// console.log('Server is listening on localhost:9000');
 
 /*PROD*/
-//app.listen(9000, "169.197.80.55");
-//console.log('Server is listening on 169.197.80.55:9000');
+app.listen(9000, "169.197.80.55");
+console.log('Server is listening on 169.197.80.55:9000');
