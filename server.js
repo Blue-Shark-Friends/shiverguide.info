@@ -21,10 +21,21 @@ app.get('/faq', (req, res) => {
 });
 
 app.get('/powerdynamics', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Power Dynamics.html'));
+  res.redirect(301, "/piratedynamics");
+});
+
+app.get('/piratedynamics', (req, res) => {
+  res.sendFile(path.join(__dirname, 'Pirate Dynamics.html'));
 });
 
 // end of pages
 
+/*BE SURE TO USE THE CORRECT PORT AND IP BEFORE PUSHING TO PRODUCTION*/
+
+/*DEV*/
+// app.listen(9000);
+// console.log('Server is listening on localhost:9000');
+
+/*PROD*/
 app.listen(9000, "169.197.80.55");
 console.log('Server is listening on 169.197.80.55:9000');
